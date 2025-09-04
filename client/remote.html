@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Remote Mode</title></head>
+    <head>
+        <title>Remote Mode</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                background: #1e1e2f;
+                color: white;
+                text-align: center;
+                padding-top: 50px;
+            }
+            h2 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+            #triggerBtn {
+                padding: 15px 30px;
+                font-size: 1.2em;
+                background: #ff416c;
+                border: none;
+                border-radius: 8px;
+                color: white;
+                cursor: pointer;
+                transition: background 0.3s ease;
+            }
+            #triggerBtn:hover {
+                background: #ff4b2b;
+            }
+        </style>
+    </head>
     <body>
         <h2>Remote Trigger</h2>
         <button id="triggerBtn">Send Capture Signal</button>

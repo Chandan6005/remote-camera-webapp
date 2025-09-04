@@ -2,10 +2,47 @@
 <html>
     <head>
         <title>Remote-Camera WebApp</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Segoe UI', sans-serif;
+                background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                animation: fadeIn 1s ease-out;
+            }
+            .mode-btn {
+                padding: 15px 30px;
+                margin: 10px;
+                font-size: 1.2em;
+                border: none;
+                border-radius: 8px;
+                background: #00c6ff;
+                color: white;
+                cursor: pointer;
+                transition: transform 0.2s ease;
+            }
+            .mode-btn:hover {
+                transform:scale(1.05);
+                background: #0072ff;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        </style>
     </head>
     <body>
-        <h1>Select Mode</h1>
-        <button onclick="location.href='remote.html'">Remote</button>
-        <button onclick="location.href='camera.html'">Camera</button>
+        <h1>Remote-Camera WebApp</h1>
+        <button class="mode-btn" onclick="location.href='remote.html'">Remote Mode</button>
+        <button class="mode-btn" onclick="location.href='camera.html'">Camera Mode</button>
     </body>
 </html>
